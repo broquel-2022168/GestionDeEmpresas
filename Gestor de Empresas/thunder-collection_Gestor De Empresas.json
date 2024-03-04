@@ -1,0 +1,357 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Gestor De Empresas",
+    "dateExported": "2024-03-07T05:43:50.974Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "23ed34c2-7a13-4922-b7e6-6fba343c5877",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-03-05T15:54:06.469Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "679a15e1-feaa-4f3b-add2-0583ada7d4e2",
+            "name": "Category",
+            "containerId": "",
+            "created": "2024-03-06T05:12:11.770Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "3cc95922-1c17-44a4-b0ac-541cf229bef8",
+            "name": "Company",
+            "containerId": "",
+            "created": "2024-03-06T07:44:50.574Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "7c32f390-a532-4307-aec9-e369c7e4228d",
+            "colId": "f7f2e23e-1789-4efd-945f-853080d4fba0",
+            "containerId": "23ed34c2-7a13-4922-b7e6-6fba343c5877",
+            "name": "save",
+            "url": "localhost:2880/save",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-05T15:54:14.881Z",
+            "modified": "2024-03-05T16:02:20.241Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": ""
+                    },
+                    {
+                        "name": "surname",
+                        "value": ""
+                    },
+                    {
+                        "name": "username",
+                        "value": ""
+                    },
+                    {
+                        "name": "email",
+                        "value": ""
+                    },
+                    {
+                        "name": "password",
+                        "value": ""
+                    },
+                    {
+                        "name": "address",
+                        "value": ""
+                    },
+                    {
+                        "name": "phone",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "9470a5e0-f70b-4547-8f1a-f2b33912d071",
+            "colId": "f7f2e23e-1789-4efd-945f-853080d4fba0",
+            "containerId": "23ed34c2-7a13-4922-b7e6-6fba343c5877",
+            "name": "loginUser",
+            "url": "localhost:2880/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-05T16:02:34.400Z",
+            "modified": "2024-03-05T16:04:54.410Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "fernando6@gmail.com"
+                    },
+                    {
+                        "name": "username",
+                        "value": "Fer7474"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c09dfe81-8caf-4b26-a199-013d12cb8d04",
+            "colId": "f7f2e23e-1789-4efd-945f-853080d4fba0",
+            "containerId": "679a15e1-feaa-4f3b-add2-0583ada7d4e2",
+            "name": "SaveCategory",
+            "url": "localhost:2880/category/save",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-06T05:14:37.391Z",
+            "modified": "2024-03-07T05:41:23.330Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Gastronomía"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Contenido de cocina varia"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "196a2669-cb6b-4e41-941e-7dda0742ae6a",
+            "colId": "f7f2e23e-1789-4efd-945f-853080d4fba0",
+            "containerId": "679a15e1-feaa-4f3b-add2-0583ada7d4e2",
+            "name": "getCategories",
+            "url": "localhost:2880/category/get",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-03-06T07:09:25.611Z",
+            "modified": "2024-03-07T05:41:18.081Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "abf2c3ae-d3d2-4a75-8b88-63239004b534",
+            "colId": "f7f2e23e-1789-4efd-945f-853080d4fba0",
+            "containerId": "679a15e1-feaa-4f3b-add2-0583ada7d4e2",
+            "name": "updateCategories",
+            "url": "localhost:2880/category/update/",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-06T07:09:48.573Z",
+            "modified": "2024-03-07T05:41:21.226Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "012e32b5-2d78-4f57-95e8-5b4f8f90b250",
+            "colId": "f7f2e23e-1789-4efd-945f-853080d4fba0",
+            "containerId": "679a15e1-feaa-4f3b-add2-0583ada7d4e2",
+            "name": "deleteCategories",
+            "url": "localhost:2880/category/delete/",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-03-06T07:11:48.625Z",
+            "modified": "2024-03-07T05:41:14.776Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "5edee2c4-ef0f-4934-86f7-681334c4875b",
+            "colId": "f7f2e23e-1789-4efd-945f-853080d4fba0",
+            "containerId": "3cc95922-1c17-44a4-b0ac-541cf229bef8",
+            "name": "addCompany",
+            "url": "localhost:2880/company/saveCompany",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-06T07:47:17.906Z",
+            "modified": "2024-03-07T05:41:12.408Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Rentas"
+                    },
+                    {
+                        "name": "impacto",
+                        "value": "ALTO"
+                    },
+                    {
+                        "name": "trayectoria",
+                        "value": "19"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e825daacc6044b67cb4f78"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "a1ea5ad4-425f-4f47-a71c-cad77db63f32",
+            "colId": "f7f2e23e-1789-4efd-945f-853080d4fba0",
+            "containerId": "3cc95922-1c17-44a4-b0ac-541cf229bef8",
+            "name": "getA_Z",
+            "url": "localhost:2880/company/getCompanyAZ",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-03-06T07:53:06.067Z",
+            "modified": "2024-03-07T05:42:04.471Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU3NDE4ZjJkZTkxODUxZmIzYzliNWIiLCJ1c2VybmFtZSI6IkZlcjc0NzQiLCJuYW1lIjoiRmVybmFuZG8iLCJpYXQiOjE3MDk3OTAxMTAsImV4cCI6MTcwOTgwMDkxMH0.zcLX7TtyqCCQfbCwlkF-Et4vwOxNOKNGpejf02q-Fgw"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "8f80723b-c444-4403-853a-bd121a8d6ad9",
+            "colId": "f7f2e23e-1789-4efd-945f-853080d4fba0",
+            "containerId": "3cc95922-1c17-44a4-b0ac-541cf229bef8",
+            "name": "getCompanyC",
+            "url": "localhost:2880/company/getCompanyC",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-03-06T08:14:39.001Z",
+            "modified": "2024-03-07T05:41:07.284Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "f5d64a68-ae02-4f47-a241-e5ffbdc8aa6a",
+            "colId": "f7f2e23e-1789-4efd-945f-853080d4fba0",
+            "containerId": "3cc95922-1c17-44a4-b0ac-541cf229bef8",
+            "name": "getZ_A",
+            "url": "localhost:2880/company/getCompanyZA",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-06T08:18:55.628Z",
+            "modified": "2024-03-07T05:41:04.688Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "38c3506b-d56b-48ee-948c-5dbd4a0138ef",
+            "colId": "f7f2e23e-1789-4efd-945f-853080d4fba0",
+            "containerId": "3cc95922-1c17-44a4-b0ac-541cf229bef8",
+            "name": "updateCompany",
+            "url": "localhost:2880/company/updateCompany/",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-03-07T03:00:51.868Z",
+            "modified": "2024-03-07T05:40:57.572Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": ""
+                    }
+                ]
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "22a7e8f7-027f-41af-9c79-0710f692d96e",
+            "colId": "f7f2e23e-1789-4efd-945f-853080d4fba0",
+            "containerId": "3cc95922-1c17-44a4-b0ac-541cf229bef8",
+            "name": "GenerateExcell",
+            "url": "localhost:2880/company/generar",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-03-07T05:08:12.941Z",
+            "modified": "2024-03-07T05:40:53.638Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        }
+    ]
+}
